@@ -2,7 +2,7 @@ A Tmux Fcitx client
 ====================
 
 Dependenices:
-Need fcitx5 to compile.
+Need fcitx5 to compile, need dbus-send to run.
 
 Compile:
 ```
@@ -18,3 +18,10 @@ Add following content to ~/.tmux.conf
 ```
 run /usr/share/tmux-fcitx5/fcitx5.tmux
 ```
+
+Known issue:
+
+Not all key combinition works, specially for modifier key only hotkey and key release event due to Tmux bind-key limitation.
+Trigger key (Control+Space) repeatedly press functionality does not work properly. So you will see Control+space enumerate over different input method if you have more than one input method configured.
+
+Keyboard layout related feature won't work too, which is expected.
