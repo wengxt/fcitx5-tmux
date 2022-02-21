@@ -2,13 +2,17 @@ A Tmux Fcitx client
 ====================
 
 What this project is:
+
 Make tmux a fcitx client. It allows you to type with input method without using graphical display server. For example, you can type with Fcitx under TTY.
 
 What this project is not:
+
 Display fcitx state in tmux. That is not the goal of this project.
 
 Dependenices:
-Need fcitx5 to compile, need dbus-send to run.
+
+1. Need fcitx5 to compile
+2. Need dbus-send to run.
 
 Compile:
 ```
